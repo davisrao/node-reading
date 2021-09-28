@@ -10,7 +10,9 @@ async function cat() {
         let contents = await fsP.readFile(path, "utf8");
         console.log(contents);
     } catch (err) {
-        process.exit(1)
+        console.log(err)
+        process.exit(0)
+
     }
 };
 
